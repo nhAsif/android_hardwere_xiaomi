@@ -1,10 +1,11 @@
 /*
- * Copyright (C) 2020-2022 The LineageOS Project
+ * Copyright (C) 2020 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#pragma once
+#ifndef VENDOR_LINEAGE_POWERSHARE_V1_0_POWERSHARE_H
+#define VENDOR_LINEAGE_POWERSHARE_V1_0_POWERSHARE_H
 
 #include <vendor/lineage/powershare/1.0/IPowerShare.h>
 
@@ -31,3 +32,5 @@ class PowerShare : public IPowerShare {
 }  // namespace powershare
 }  // namespace lineage
 }  // namespace vendor
+
+#endif  // VENDOR_LINEAGE_POWERSHARE_V1_0_POWERSHARE_H
