@@ -35,8 +35,7 @@ static T get(const std::string& path, const T& def) {
 }
 
 Return<bool> PowerShare::isEnabled() {
-    const auto value = get<std::string>(WIRELESS_TX_ENABLE_PATH, "");
-    return !(value == "disable" || value == "0");
+    return get<std::string>(WIRELESS_TX_ENABLE_PATH, "disable") != "disable";
 }
 
 Return<bool> PowerShare::setEnabled(bool enable) {
